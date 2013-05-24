@@ -1,0 +1,18 @@
+execute pathogen#infect()
+call pathogen#incubate()
+call pathogen#helptags()
+
+set number
+set ai
+set pastetoggle=<F2>
+au FileType python set omnifunc=pythoncomplete#Complete
+let g:SuperTabDefaultCompletionType = "context"
+let g:SuperTabClosePreviewOnPopupClose = 1
+
+let mapleader = ","
+let g:pyflakes_use_quickfix = 0
+map <leader>n : NERDTreeToggle<CR>
+
+syntax on
+filetype on
+filetype plugin on
