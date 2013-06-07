@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/media/Company/Calibrations/OCP/OCP_MQ56/data/C_Check_Cal'
+let g:netrw_dirhist_2='/home/guy/python_calibration/calibration-platform/.git/hooks'
+let g:netrw_dirhist_3='/home/guy/Documents/Calibrations/MCB/MCB_MQ70/mq200/conf'
+let g:netrw_dirhist_4='/home/guy/Documents/Calibrations/MCB/MCB_MQ70/data'
+let g:netrw_dirhist_5='/home/guy/Documents/Calibrations/NPB/NPB_MQ36/mq200/conf'

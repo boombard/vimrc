@@ -3,16 +3,33 @@ call pathogen#incubate()
 call pathogen#helptags()
 
 set number
-set ai
+set ts=4 sw=4 sta et sts=4 ai
 set pastetoggle=<F2>
 au FileType python set omnifunc=pythoncomplete#Complete
 let g:SuperTabDefaultCompletionType = "context"
 let g:SuperTabClosePreviewOnPopupClose = 1
+let g:pyflakes_use_quikfix = 0
 
 let mapleader = ","
 let g:pyflakes_use_quickfix = 0
 map <leader>n : NERDTreeToggle<CR>
+map <c-l> <c-w>l
+map <c-k> <c-w>k
+map <c-j> <c-w>j
+map <c-h> <c-w>h
 
 syntax on
 filetype on
 filetype plugin on
+if has("gui_running")
+  highlight SpellBad term=underline gui=undercurl guisp=Orange 
+endif
+
+set foldmethod=indent
+set foldlevel=99
+nnoremap <space> za
+nnoremap <space> zf
+
+set background=dark
+se t_Co=16 
+colorscheme solarized
